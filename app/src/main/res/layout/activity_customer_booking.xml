@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/price" />
+
+    <TextView
+        android:id="@+id/routeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/route" />
+
+    <TextView
+        android:id="@+id/booking_flighttimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/routeView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Id" />
+
+    <TextView
+        android:id="@+id/availableseats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/booking_flighttimes"
+        android:layout_centerHorizontal="true"
+        android:text="@string/seatsLeft" />
+
+    <ListView
+        android:id="@+id/passengers_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bookingbtn"
+        android:layout_below="@id/booking_flighttimes"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="112dp"
+        android:layout_toRightOf="@id/bookingbtn"
+        android:layout_toEndOf="@id/bookingbtn"
+        android:text="@string/cancel_booking"
+        app:backgroundTint="#DD3F34" />
+
+    <Button
+        android:id="@+id/bookingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="112dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/confirmed_booking"
+        app:backgroundTint="#8BC34A" />
+
+
+</RelativeLayout>

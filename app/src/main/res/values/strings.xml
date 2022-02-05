@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Flight System </string>
+    <string name="booking_activity">Manage booking  </string>
+    <string name="confirmed_booking">Confirm booking  </string>
+    <string name="cancel_booking">Cancel booking  </string>
+    <string name="price"> Default Price  </string>
+    <string name="route">Arrival Destination </string>
+    <string name="Id">Id  </string>
+    <string name="seatsLeft">40</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sSqlapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.Sqlapp" >
+        <activity
+            android:name="com.example.sSqlapplication.WelcomeActivity"
+            android:theme="@style/WelcomeTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sSqlapplication.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.sSqlapplication.CustomerBookingActivity"
+            android:label="@string/booking_activity"
+            android:parentActivityName="com.example.sSqlapplication.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sSqlapplication.MainActivity" />
+        </activity>
+        <activity android:name="com.example.sSqlapplication.LoginActivity" />
+        <activity
+            android:name="com.example.sSqlapplication.RegisterActivity"
+            android:parentActivityName="com.example.sSqlapplication.LoginActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sSqlapplication.LoginActivity" />
+        </activity>
+    </application>
+
+</manifest>
