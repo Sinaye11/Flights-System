@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         ReceiveLoggedInUser();
 
 
-        //seedData(SinayesFlightDb);
+        seedData(SinayesFlightDb);
         ArrayList<FlightItem> flights = GetAllAvailableFlights(SinayesFlightDb);
 
         //initialize RecyclerView in XML layout by id defined in activity_main.xml layout file
